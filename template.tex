@@ -1,0 +1,57 @@
+\documentclass{beamer}
+ 
+\usepackage[utf8]{inputenc}
+% \usepackage[frenchb]{babel}
+% \usepackage[T1]{fontenc}
+% \usepackage[latin1]{inputenc}
+
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{eso-pic}
+
+\usepackage{movie15}
+\usetheme{Warsaw}
+
+\author{}
+\institute{Your institute here}
+\date{\today}
+\title[Title that goes in every page]{A big title\\Even in multiple line}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Summary}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+% \begin{columns}
+%     \column{0.5\textwidth}
+%     \begin{itemize}
+%         \item my first item
+%         \item my second item
+%         \item and another one
+%     \end{itemize}
+%     \column{0.5\textwidth}
+%     \begin{figure}
+%         \includegraphics[width=5cm]{path.png}
+%         \captionof{figure}{place your source}
+%     \end{figure}
+% \end{columns}
+ 
+ 
+\begin{document}
+
+% display the title
+\frame{\titlepage}
+
+
+% automatic table of content at every section
+\begin{frame}
+    \tableofcontents[pausesections]  
+\end{frame}
+
+
+\end{document}
